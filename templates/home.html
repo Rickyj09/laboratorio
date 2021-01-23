@@ -1,0 +1,142 @@
+
+{% extends "layout.html"%}
+{% block content %}
+			<main>
+				<div id="slide-wrap">
+					<section id="inicio">
+					  <ul class="slider1">
+						<li><img src="/static/img/foto1.jpg" alt=""></li>
+						<li><img src="/static/img/foto8.jpg" alt=""></li>
+						<li><img src="/static/img/foto6.jpg" alt=""></li>
+					  </ul>
+					</section>
+				  </div>
+				</section>
+				<section id="nosotros" class="seccion">
+					<p>
+						Con 6 años de experiencia al servicio de la comunidad, ofreciendo resultados confiables y garantizados..Nuestra atención a domicilio las 24 horas de lunes a domingo.
+					</p>
+					</div>
+					</div>
+				</section>
+				<section id="servicios" class="seccion">
+					<div class="container">
+						<div class="row">
+							<div class="columna columna-33 columna-mobile-100">
+								<div class="bloque-servicio">
+									<div class="bloque-img-servcio cuadrado-perfecto">
+										<img src="/static/img/laboratorios.jpg">
+									</div>
+									<div class="bloque-contenido-servicio">
+										<h3>Laboratorio Clínico</h3>
+										<p>
+											Se desarrollan los análisis que contribuyen al estudio, la prevención, el diagnóstico y el tratamiento de los problemas de salud.
+										</p>
+										<a href="{{ url_for('lab')}}" class="boton boton-blanco">Ver más</a>
+									</div>
+								</div>
+							</div>
+							<div class="columna columna-33 columna-mobile-100">
+										<div class="bloque-servicio ">
+									<div class="bloque-img-servcio cuadrado-perfecto">
+										<img src="/static/img/foto4.jpg">
+									</div>
+									<div class="bloque-contenido-servicio">
+										<h3>Medicina Ocupacional</h3>
+										<p>
+											exámenes para todo el personal en el área de salud y riesgos ocupacionales
+										</p>
+										<a href="{{ url_for('ocupa')}}" class="boton boton-blanco">Ver más</a>
+									</div>
+								</div>
+							</div>
+							<div class="columna columna-33 columna-mobile-100">
+										<div class="bloque-servicio">
+									<div class="bloque-img-servcio cuadrado-perfecto">
+										<img src="/static/img/foto3.jpg">
+									</div>
+									<div class="bloque-contenido-servicio">
+										<h3>EXAMENES DE SANGRE</h3>
+										<p>
+											Atención personalizada a Niños, Jóvenes y Adultos en Quito y sus alrededores ( a domicilio)
+											Realizamos ANTICUERPOS COVID-19.
+											pruebas de Embarazo,Pruebas Hormonales,Perfil Tiroideo.
+											Química Sanguínea, Biometria Hematica.
+										</p>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="galeria">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="columna-33 columna-mobile-50">
+								<div class="cuadrado-perfecto">
+									<img src="/static/img/foto1.jpg">
+									<h4>Imagen1</h4>
+								</div>
+							</div>
+							<div class="columna-33 columna-mobile-50">
+								<div class="cuadrado-perfecto">
+									<img src="/static/img/foto2.jpg">
+									<h4>Imagen2</h4>
+								</div>
+							</div>
+							<div class="columna-33 columna-mobile-50">
+								<div class="cuadrado-perfecto">
+									<img src="/static/img/foto3.jpg">
+									<h4>Imagen3</h4>
+								</div>
+							</div>
+							<div class="columna-33 columna-mobile-50">
+								<div class="cuadrado-perfecto">
+									<img src="/static/img/foto4.jpg">
+									<h4>Imagen4</h4>
+								</div>
+							</div>
+							<div class="columna-33 columna-mobile-50">
+								<div class="cuadrado-perfecto">
+									<img src="/static/img/foto5.jpg">
+									<h4>Imagen5</h4>
+								</div>
+							</div>
+							<div class="columna-33 columna-mobile-50">
+								<div class="cuadrado-perfecto">
+									<img src="/static/img/foto1.jpg">
+									<h4>Imagen6</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="contactenos" class="seccion">
+					<iframe width="520" height="400" frameborder="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Quito+(Quito)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+					<div class="container">
+						<div class="row">
+							 <div class="columna columna-41 columna-mobile-100 empujar-58 empujar-mobile-0 sinpadding-mobile">
+							 	<form action="/envia_mail" method="POST">
+							 		<div class="from-block">
+							 			<input type="text" name="nombre" class="from-control" placeholder="Nombre">
+							 			
+							 		</div>
+							 		<div class="from-block">
+							 			<input type="email" name="email" class="from-control" placeholder="Email">
+							 			
+							 		</div>
+							 		
+							 		<div class="from-block bloque-ultimo">
+							 			<input type="submit" class="boton boton-negro" value="Enviar">
+							 		</div>
+							 	</form>
+							 </div>
+						</div>
+					</div>
+					
+				</section>
+			</main>
+			
+
+{% endblock %}
