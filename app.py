@@ -1,6 +1,4 @@
 from flask import Flask , render_template, request, redirect, url_for, flash
-from flask_mysqldb import MySQL
-import calendar
 from flask_mail import Mail  # 1. Importamos la clase Mail
 from flask_mail import Message
 import smtplib, ssl
