@@ -10,7 +10,7 @@ app = Flask(__name__)
 mail = Mail() 
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login('jerez.ricardo09@gmail.com', 'nSaiwj@2021')
+server.login('jerez.ricardo09@gmail.com', 'IamRzz@2021')
 
 
 #setting
