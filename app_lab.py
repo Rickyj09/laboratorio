@@ -1,4 +1,6 @@
 from flask import Flask , render_template, request, redirect, url_for, flash
+from flask_mysqldb import MySQL
+import calendar
 from flask_mail import Mail  # 1. Importamos la clase Mail
 from flask_mail import Message
 import smtplib, ssl
@@ -10,7 +12,7 @@ app = Flask(__name__)
 mail = Mail() 
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login('jerez.ricardo09@gmail.com', 'IamRzz@2021')
+server.login('jerez.ricardo09@gmail.com', 'CrsbRc@2021')
 
 
 #setting
@@ -20,7 +22,7 @@ MAIL_PORT = 587
 MAIL_USE_SSL = False
 MAIL_USE_TLS = True
 MAIL_USERNAME = 'jerez.ricardo09@gmail.com'
-MAIL_PASSWORD = 'nSaiwj@2021'
+MAIL_PASSWORD = 'CrsbRc@2021'
 
 
 # routes
@@ -41,8 +43,9 @@ def envia_mail():
     if request.method == 'POST':
         nom = request.form['nombre']
         email = request.form['email']
+        mensaje = request.form['mensaje']
         mensaje1 = 'Subject: {}\n\n{}'.format(email,nom)
-        server.sendmail("jerez.ricardo09@gmail.com", "jerez_ricardo9@hotmail.com", mensaje1)
+        server.sendmail("jerez.ricardo09@gmail.com", "jerez_ricardo9@hotmail.com", mensaje1, mensaje)
         server.quit()
         return redirect( url_for('home'))
 
