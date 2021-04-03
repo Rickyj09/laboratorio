@@ -296,7 +296,7 @@ header .container .hamb
 
 #nosotros
 {
-	background-image: url(/static/img/foto7.jpg);
+	background-image: url(/static/img/foto22.jpg);
 	background-size: cover;
 	
 }
@@ -506,13 +506,30 @@ header .container .hamb
 	{
 		height: 100vh;
 	}
-	#inicio img
+	#inicio ul
 	{
 		height: 100%;
-		object-fit: cover;
-		object-position: center;
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 0;
+		flex-grow: 0;
+		max-width: 100%;
+	}
+	#slide-wrap
+	{
+		height: 100vh;
 	}
 
+
+	.bxslider 
+	{
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			flex-shrink: 0;
+			flex-grow: 0;
+			max-width: 100%;
+	}
 	#servicios .bloque-servicio
 	{
 		margin-bottom: 15px;
